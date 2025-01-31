@@ -1,0 +1,15 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmRelease
+metadata:
+  name: k3s
+  namespace: kube-system
+spec:
+  chart:
+    spec:
+      chart: rancher/k3s  # Nome do chart do K3s
+      version: "1.31.4+k3s1"
+      repo: https://charts.rancher.io
+  valuesContent: |-
+    extraArgs:
+      - --tls-san=192.168.1.132
+    replicas: 1
