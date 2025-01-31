@@ -1,12 +1,12 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterFleet
 metadata:
-  name: cluster-a
+  name: downstream-v
 spec:
   targets:
-    - name: cluster-a-target
+    - name: downstream-v
       clusterSelector:
         matchLabels:
           kubernetes.io/cluster-name: downstream-v
       gitRepos:
-        - name: fleet-baseline  # Nome do repositório Git configurado anteriormente
+        - name: fleet-baseline
