@@ -2,7 +2,7 @@ apiVersion: helm.cattle.io/v1
 kind: HelmRelease
 metadata:
   name: k3s
-  namespace: kube-system
+  namespace: fleet-default
 spec:
   chart:
     spec:
