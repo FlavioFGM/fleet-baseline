@@ -62,6 +62,3 @@ spec:
           image: rancher/k3s-upgrade
         version: v1.31.3+k3s1
     name: k3s-upgrade-bundle.yaml
-  targets:
-  # Match nothing, user needs to specify targets
-  - clusterSelector: null
