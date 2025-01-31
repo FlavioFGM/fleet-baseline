@@ -6,11 +6,10 @@ metadata:
 spec:
   chart:
     spec:
-      chart: k3s
+      chart: rancher/k3s  # Nome do chart do K3s
       version: "1.31.4+k3s1"
       repo: https://charts.rancher.io
   valuesContent: |-
-    replicas: 1
     extraArgs:
       - --tls-san=192.168.1.132
-      - --node-taint=node.kubernetes.io/unreachable:NoSchedule
+    replicas: 1
