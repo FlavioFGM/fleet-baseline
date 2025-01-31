@@ -4,7 +4,7 @@ metadata:
   name: downstream-v
 spec:
   targets:
-    - name: downstream-v
+    - name: downstream-v-target
       clusterSelector:
         matchLabels:
           kubernetes.io/cluster-name: downstream-v
